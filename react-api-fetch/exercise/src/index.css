@@ -1,0 +1,161 @@
+/* Global -------------------------------------> */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.btn {
+  width: 100px;
+  height: 32px;
+}
+
+button {
+  border: none;
+  background-color: rgba(102, 63, 180, 0.8);
+  color: rgb(229, 229, 229);
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+}
+
+#logo {
+  width: 70px;
+  margin-top: 5px;
+}
+
+/* Navbar ----------------> */
+.navbar {
+  height: 48;
+  width: 100%;
+  background-color: rgb(102, 63, 180);
+  color: white;
+  padding: 6px 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.logo {
+  float: left;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.logo img {
+  max-height: 40px;
+}
+
+.nav-btn {
+  float: right;
+  padding-top: 5px;
+}
+
+/* Users -------------------------------------> */
+.list {
+  padding: 20px 20px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.list:first-of-type {
+  margin-top: 50px;
+}
+
+.list:last-of-type {
+  margin-bottom: 50px;
+}
+
+/* Post Card // UserDetail -------------------> */
+.postCard {
+  text-align: center;
+  width: 40%;
+  border-radius: 10px;
+  margin-bottom: 50px;
+  -webkit-box-shadow: 10px 7px 62px -17px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 7px 62px -17px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 7px 62px -17px rgba(0, 0, 0, 0.75);
+}
+
+.postCardTop {
+  background-color: rgba(102, 63, 180, 0.8);
+  border-radius: 10px 10px 0px 0px;
+  padding: 20px 0;
+}
+
+.postCardBottom {
+  padding: 20px 20px;
+}
+
+.postCard img {
+  box-shadow: 2px 2px solid gray;
+  -webkit-box-shadow: 10px 7px 62px -17px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 7px 62px -17px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 7px 62px -17px rgba(0, 0, 0, 0.75);
+}
+
+.postCardContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.postCard img {
+  border-radius: 50%;
+}
+
+/* Centering loading image -------->*/
+.loading {
+  width: 400px;
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+}
+
+/* Initials ------------------> */
+.isLogged img {
+  width: 50px;
+}
+
+.isLogged {
+  display: flex;
+}
+
+/* Landingt ---------------------------> */
+.landing {
+  margin-bottom: 50px;
+}
+
+/* Media queries ------------------------> */
+@media only screen and (max-width: 375px) {
+  .postCard {
+    width: 90%;
+  }
+  body {
+    font-size: 0.7em;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .postCard {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .postCard {
+    width: 70%;
+  }
+  .list {
+    display: block;
+  }
+}
